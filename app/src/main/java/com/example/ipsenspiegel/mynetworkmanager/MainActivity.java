@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View whichview) {
         if (whichview.getId() == R.id.imageViewMain) {
-            
+
+            final String urlString = "http://www.tutorialspoint.com/green/images/logo.png";
             Picasso.with(this).load(urlString).into(this.mImageView);
 
         } else if (whichview.getId() == R.id.btnReadFeed) {
