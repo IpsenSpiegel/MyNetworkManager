@@ -27,6 +27,10 @@ public class MyOtherPassingThread extends AsyncTask<String, Void, String> {
     private static final String TAG = "TAG_MY_OTHER_PASSING_THREAD";
     private Context threadContext;
 
+    public MyOtherPassingThread(Context context) {
+        this.threadContext = context;
+    }
+
 
     @Override
     protected @Nullable String doInBackground(String[] params) {
